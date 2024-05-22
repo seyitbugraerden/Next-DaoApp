@@ -3,10 +3,13 @@ import React from "react";
 
 function Footer() {
   return (
-    <footer className="bg-black ">
+    <footer className="bg-mainColor">
       <div className="container grid grid-cols-4 py-20 text-white">
         <div>
-          <Link className="text-white hover:opacity-70 duration-500 no-underline" href="index.html">
+          <Link
+            className="text-white hover:opacity-70 duration-500 no-underline"
+            href="index.html"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="20"
@@ -74,7 +77,7 @@ function Footer() {
           </Link>
         </div>
       </div>
-      <div className="text-white text-center py-3 bg-[#1C1E1F]">
+      <div className="text-white text-center py-3 bg-mainColor">
         <span className="opacity-50">Made by</span>
         <Link
           href="https://github.com/seyitbugraerden"
