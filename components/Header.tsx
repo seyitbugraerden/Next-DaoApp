@@ -38,7 +38,7 @@ function Header() {
               </li>
               <li className="">
                 <Link
-                  className="no-underline text-white  "
+                  className="no-underline text-white hover:opacity-70 duration-500 "
                   href="/content"
                   aria-label="A sample content page"
                 >
