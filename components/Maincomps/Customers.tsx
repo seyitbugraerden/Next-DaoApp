@@ -47,8 +47,8 @@ function Customers() {
 
 
               </div>
-              <p className="text-secondary lead">"Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore et
-                dolore magna aliqua ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
+              <p className="text-secondary lead">Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore et
+                dolore magna aliqua ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
               <div className="d-flex justify-content-start align-items-center border-top border-secondary pt-3">
                 <Image src={img1} width="96" height="96" className="rounded-circle me-3" alt="a nice person"
                   loading="lazy"/>
@@ -95,9 +95,9 @@ function Customers() {
                 </svg>
 
               </div>
-              <p className="text-secondary lead">"Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore et
+              <p className="text-secondary lead">Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore et
                 dolore magna aliqua. Ut enim ad minim veniam. quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat."</p>
+                ex ea commodo consequat.</p>
               <div className="d-flex justify-content-start align-items-center border-top border-secondary pt-3">
                 <Image src={img2} width="96" height="96" className="rounded-circle me-3" alt="a nice person"
                  loading="lazy"/>
@@ -152,9 +152,9 @@ function Customers() {
 
 
               </div>
-              <p className="lead">"Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+              <p className="lead">Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
                 aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat."</p>
+                consequat.</p>
               <div className="d-flex justify-content-start align-items-center border-top pt-3">
                 <Image src={img3} width="96" height="96" className="rounded-circle me-3" alt="a nice person"
                   loading="lazy"/>
