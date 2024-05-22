@@ -50,11 +50,12 @@ function Header() {
             </li>
           </ul>
           <Link
-            href="https://templatedeck.com/klar-html-template.html"
+            href="https://github.com/seyitbugraerden"
+            target="_blank"
             aria-label="Download this template"
-            className="btn btn-outline-light"
+            className="border-[1px] no-underline text-white px-3 py-2 rounded-full hover:bg-white hover:!text-black transition animate-pulse text-xs duration-300"
           >
-            <small>Download Template</small>
+            Go to Github
           </Link>
         </div>
       </nav>
