@@ -5,71 +5,49 @@ import img1 from "@/public/images/abstract3.webp";
 import img2 from "@/public/images/abstract2.webp";
 import img3 from "@/public/images/abstract17.webp";
 import img4 from "@/public/images/abstract4.webp";
+import Container from "../Container";
 
 function Whatwedontknow() {
   return (
-    <div className="bg-black py-vh-3">
-      <div className="container bg-black px-vw-5 py-vh-3 rounded-5 shadow">
-        <div className="row gx-5">
-          <div className="col-12 col-md-6">
-            <div className="card bg-transparent mb-5">
-              <div className="bg-dark shadow rounded-5 p-0">
-                <Image
-                  src={img1}
-                  width="582"
-                  height="327"
-                  alt="abstract image"
-                  className="img-fluid rounded-5 no-bottom-radius"
-                  loading="lazy"
-                />
-                <div className="p-5">
-                  <h2 className="fw-lighter text-white">Ipsum dolor est</h2>
-                  <p className="pb-4 text-secondary">
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                    diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                    aliquyam erat.
-                  </p>
-                  <Link href="#" className="link-fancy link-fancy-light">
-                    Read more
-                  </Link>
-                </div>
+    <div className="bg-black py-36">
+      <Container>
+        <div
+          className="grid"
+          style={{
+            gridTemplateColumns: "repeat(2,1fr)",
+            alignItems: "start",
+            gap: "5rem",
+            gridAutoFlow: "dense",
+          }}
+        >
+          <div className="flex flex-col gap-24">
+            <div className="bg-bgColor rounded-[36px]">
+              <Image
+                src={img1}
+                width="582"
+                height="327"
+                alt="abstract image"
+                className="rounded-t-[36px]"
+                loading="lazy"
+              />
+              <div className="px-10 pb-24 pt-10">
+                <h2 className="text-white text-4xl font-medium">
+                  Ipsum dolor est
+                </h2>
+                <p className="text-white opacity-50 mt-2 text-lg">
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                  diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                  aliquyam erat.
+                </p>
+                <Link
+                  href="#"
+                  className="text-white underline text-xl relative top-12"
+                >
+                  Read more
+                </Link>
               </div>
             </div>
-
-            <div className="card bg-transparent">
-              <div className="bg-dark shadow rounded-5 p-0">
-                <Image
-                  src={img2}
-                  width="582"
-                  height="442"
-                  alt="abstract image"
-                  className="img-fluid rounded-5 no-bottom-radius"
-                  loading="lazy"
-                />
-                <div className="p-5">
-                  <h2 className="fw-lighter text-white">Ipsum dolor est</h2>
-                  <p className="pb-4 text-secondary">
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                    diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                    aliquyam erat.
-                  </p>
-                  <Link href="#" className="link-fancy link-fancy-light">
-                    Read more
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="col-12 col-md-6">
-            <div className="p-5 pt-0 mt-5">
-              <span className="h5 text-secondary fw-lighter text-white">
-                What we don´t know
-              </span>
-              <h2 className="display-4 text-white">
-                There is a lot we don´t know. Here is a small sneak peek
-              </h2>
-            </div>
-            <div className="card bg-transparent mb-5 mt-5">
+            <div className="bg-bgColor rounded-[36px]">
               <div className="bg-dark shadow rounded-5 p-0">
                 <Image
                   src={img3}
@@ -79,21 +57,65 @@ function Whatwedontknow() {
                   className="img-fluid rounded-5 no-bottom-radius"
                   loading="lazy"
                 />
-                <div className="p-5">
-                  <h2 className="fw-lighter text-white">Ipsum dolor est</h2>
-                  <p className="pb-4 text-secondary">
+                <div className="px-10 pb-24 pt-10">
+                  <h2 className="text-white text-4xl font-medium">
+                    Ipsum dolor est
+                  </h2>
+                  <p className="text-white opacity-50 mt-2 text-lg">
                     Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
                     diam nonumy eirmod tempor invidunt ut labore et dolore magna
                     aliquyam erat.
                   </p>
-                  <Link href="#" className="link-fancy link-fancy-light">
+                  <Link
+                    href="#"
+                    className="text-white underline text-xl relative top-12"
+                  >
                     Read more
                   </Link>
                 </div>
               </div>
             </div>
-
-            <div className="card bg-transparent">
+          </div>
+          <div className="flex flex-col gap-24">
+            <div className="rounded-[36px]" >
+              <div className="bg-dark shadow rounded-5 p-0">
+                <div className="flex justify-center items-start flex-col p-10">
+                  <span className="text-white text-4xl opacity-50">
+                    What we don´t know
+                  </span>
+                  <h2 className="text-white text-6xl">
+                    There is a lot we don´t know. Here is a small sneak peek
+                  </h2>
+                </div>
+                <div className="rounded-5 bg-bgColor rounded-[36px]">
+                  <Image
+                    src={img2}
+                    width="582"
+                    height="327"
+                    alt="abstract image"
+                    className="rounded-t-[36px] max-h-96 object-cover"
+                    loading="lazy"
+                  />
+                  <div className="px-10 pb-24 pt-10 h-full">
+                  <h2 className="text-white text-4xl font-medium">
+                    Ipsum dolor est
+                  </h2>
+                  <p className="text-white opacity-50 mt-2 text-lg">
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                    diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                    aliquyam erat.
+                  </p>
+                  <Link
+                    href="#"
+                    className="text-white underline text-xl relative top-12"
+                  >
+                    Read more
+                  </Link>
+                </div>
+                </div>
+              </div>
+            </div>
+            <div className="bg-bgColor rounded-[36px]">
               <div className="bg-dark shadow rounded-5 p-0">
                 <Image
                   src={img4}
@@ -103,14 +125,19 @@ function Whatwedontknow() {
                   className="img-fluid rounded-5 no-bottom-radius"
                   loading="lazy"
                 />
-                <div className="p-5">
-                  <h2 className="fw-lighter text-white">Ipsum dolor est</h2>
-                  <p className="pb-4 text-secondary">
+                <div className="px-10 pb-24 pt-10 h-full">
+                  <h2 className="text-white text-4xl font-medium">
+                    Ipsum dolor est
+                  </h2>
+                  <p className="text-white opacity-50 mt-2 text-lg">
                     Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
                     diam nonumy eirmod tempor invidunt ut labore et dolore magna
                     aliquyam erat.
                   </p>
-                  <Link href="#" className="link-fancy link-fancy-light">
+                  <Link
+                    href="#"
+                    className="text-white underline text-xl relative top-12"
+                  >
                     Read more
                   </Link>
                 </div>
@@ -118,7 +145,7 @@ function Whatwedontknow() {
             </div>
           </div>
         </div>
-      </div>
+      </Container>
     </div>
   );
 }
