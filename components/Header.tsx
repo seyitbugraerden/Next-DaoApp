@@ -6,7 +6,7 @@ function Header() {
   return (
     <header className="bg-mainColor">
       <Container>
-        <nav id="navScroll" className=" bg-dark text-white py-2">
+        <nav id="navScroll" className=" bg-dark text-white py-5">
           <div className="flex flex-row justify-between items-center">
             <Link
               className="text-white flex flex-row items-center gap-2 no-underline hover:opacity-70 duration-500"
