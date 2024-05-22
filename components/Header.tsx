@@ -7,7 +7,7 @@ function Header() {
       <nav id="navScroll" className=" bg-dark text-white py-2">
         <div className="container flex flex-row justify-between items-center">
           <Link
-            className="text-white flex flex-row items-center gap-2 no-underline"
+            className="text-white flex flex-row items-center gap-2 no-underline hover:opacity-70 duration-500"
             href="/"
           >
             <svg
@@ -26,13 +26,13 @@ function Header() {
 
           <ul className="flex flex:md-row  items-center justify-center mb-0 gap-3">
             <li className="">
-              <Link className="no-underline text-white hover:opacity-80" href="/" aria-label="Homepage">
+              <Link className="no-underline text-white hover:opacity-70 duration-500" href="/" aria-label="Homepage">
                 Home
               </Link>
             </li>
             <li className="">
               <Link
-                className="no-underline text-white hover:opacity-80"
+                className="no-underline text-white  "
                 href="/content"
                 aria-label="A sample content page"
               >
@@ -41,7 +41,7 @@ function Header() {
             </li>
             <li className="">
               <Link
-                className="no-underline text-white hover:opacity-80"
+                className="no-underline text-white hover:opacity-70 duration-500"
                 href="/system"
                 aria-label="A system message page"
               >
