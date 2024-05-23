@@ -1,5 +1,4 @@
 import Charge from "@/components/Maincomps/Charge";
-import Counters from "@/components/Maincomps/Counters";
 import Customers from "@/components/Maincomps/Customers";
 import Doyoulikefaces from "@/components/Maincomps/Doyoulikefaces";
 import Mission from "@/components/Maincomps/Mission";
