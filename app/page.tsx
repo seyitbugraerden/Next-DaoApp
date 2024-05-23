@@ -16,7 +16,6 @@ export default function Home() {
       <Whatwedontknow/>
       <Doyoulikefaces/>
       <Charge/>
-      <Counters/>
       <Customers/>
     </>
   );
