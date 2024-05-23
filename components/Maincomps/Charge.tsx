@@ -1,34 +1,32 @@
 import React from "react";
+import Container from "../Container";
+import Button from "../Button";
+import Link from "next/link";
 
 function Charge() {
   return (
-    <div className="bg-black">
-      <div className="container px-vw-5 py-vh-5">
-        <div className="row d-flex align-items-center">
-          <div
-            className="col-12 col-lg-5 text-center text-lg-end"
-          >
-            <span className="h5 text-secondary fw-lighter">What we charge</span>
-            <h2 className="display-4 text-white">
+    <div className="bg-black py-36">
+      <Container>
+        <div className="flex flex-row items-center gap-16">
+          <div className="text-right min-w-[40%]">
+            <span className="text-2xl opacity-50 text-white">What we charge</span>
+            <h2 className="font-bold text-5xl text-white">
               You get all our knowledge for one simple price
             </h2>
           </div>
-          <div
-            className="col-12 col-lg-7 bg-dark rounded-5 py-vh-3 text-center my-5"
-            
-          >
-            <h2 className="display-huge mb-5 text-white">
-              <span className="fs-4 me-2 fw-light">$</span>
-              <span className="border-bottom border-5">499</span>
+          <div className="bg-bgColor flex justify-center items-center flex-col px-8 py-12 rounded-[36px] gap-14">
+            <h2 className=" text-white">
+              <span className="text-2xl">$</span>
+              <span className="text-6xl font-bold underline">499</span>
               <span className="fs-6 fw-light">/day</span>
             </h2>
-            <p className="lead text-secondary">
+            <p className="text-center text-2xl font-thin text-white opacity-50">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
               nisi ut aliquip ex ea commodo consequat.
             </p>
-            <a href="#" className="btn btn-xl btn-light">
+            <Button>
               Sign up
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -43,10 +41,10 @@ function Charge() {
                   d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
                 />
               </svg>
-            </a>
+            </Button>
           </div>
         </div>
-      </div>
+      </Container>
     </div>
   );
 }
