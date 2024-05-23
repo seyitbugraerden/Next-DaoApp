@@ -2,7 +2,7 @@ import React from "react";
 import Container from "@/components/Container";
 function ContentItem() {
   return (
-    <div className="bg-black text-white">
+    <div className="bg-bgColor text-white">
       <Container>
         <div className="grid xl:grid-cols-3 gap-14 xl:max-w-[60vw] mx-auto pb-14">
           <div className="col-span-2 flex flex-col gap-6">

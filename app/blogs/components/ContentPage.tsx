@@ -3,7 +3,7 @@ import React from "react";
 
 function ContentPage() {
   return (
-    <div className="bg-black">
+    <div className="bg-bgColor">
       <Container>
         <div className="text-white py-24 xl:max-w-[30vw] mx-auto">
           <h1 className="text-6xl">

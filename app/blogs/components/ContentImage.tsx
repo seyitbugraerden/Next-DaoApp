@@ -4,7 +4,7 @@ import Image from "next/image";
 import Container from "@/components/Container";
 function ContentImage() {
   return (
-    <div className="bg-black pb-24">
+    <div className="bg-bgColor pb-24">
       <Container>
         <Image
           src={img1}
