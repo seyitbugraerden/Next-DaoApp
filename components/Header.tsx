@@ -39,19 +39,19 @@ function Header() {
               <li className="">
                 <Link
                   className="no-underline text-white hover:opacity-70 duration-500 "
-                  href="/content"
+                  href="/blogs"
                   aria-label="A sample content page"
                 >
-                  Content
+                  Blogs
                 </Link>
               </li>
               <li className="">
                 <Link
                   className="no-underline text-white hover:opacity-70 duration-500"
-                  href="/system"
+                  href="/user"
                   aria-label="A system message page"
                 >
-                  System
+                  User
                 </Link>
               </li>
             </ul>
