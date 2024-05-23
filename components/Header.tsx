@@ -1,8 +1,11 @@
 import Link from "next/link";
 import React from "react";
 import Container from "./Container";
+import { pb } from "@/lib/pb";
+import HeaderItem from "./header/HeaderItem";
 
-function Header() {
+async function Header() {
+  const headerList = await pb.collection("Headers").getFullList();
   return (
     <header className="bg-mainColor">
       <Container>
@@ -27,33 +30,9 @@ function Header() {
             </Link>
 
             <ul className="flex flex:md-row  items-center justify-center mb-0 gap-3">
-              <li className="">
-                <Link
-                  className="no-underline text-white hover:opacity-70 duration-500"
-                  href="/"
-                  aria-label="Homepage"
-                >
-                  Home
-                </Link>
-              </li>
-              <li className="">
-                <Link
-                  className="no-underline text-white hover:opacity-70 duration-500 "
-                  href="/blogs"
-                  aria-label="A sample content page"
-                >
-                  Blogs
-                </Link>
-              </li>
-              <li className="">
-                <Link
-                  className="no-underline text-white hover:opacity-70 duration-500"
-                  href="/user"
-                  aria-label="A system message page"
-                >
-                  User
-                </Link>
-              </li>
+              {headerList.map((item) => (
+                <HeaderItem item={item} key={item.index}/>
+              ))}
             </ul>
             <Link
               href="https://github.com/seyitbugraerden"
