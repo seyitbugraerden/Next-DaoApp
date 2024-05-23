@@ -12,9 +12,8 @@ function Whatwedontknow() {
     <div className="bg-black py-36">
       <Container>
         <div
-          className="grid"
+          className="grid grid-cols-1 xl:grid-cols-2"
           style={{
-            gridTemplateColumns: "repeat(2,1fr)",
             alignItems: "start",
             gap: "5rem",
             gridAutoFlow: "dense",
@@ -54,7 +53,7 @@ function Whatwedontknow() {
                   width="582"
                   height="390"
                   alt="abstract image"
-                  className="img-fluid rounded-5 no-bottom-radius"
+                  className="rounded-t-[36px]"
                   loading="lazy"
                 />
                 <div className="px-10 pb-24 pt-10">
@@ -79,7 +78,7 @@ function Whatwedontknow() {
           <div className="flex flex-col gap-24">
             <div className="rounded-[36px]" >
               <div className="bg-dark shadow rounded-5 p-0">
-                <div className="flex justify-center items-start flex-col p-10">
+                <div className="flex justify-center items-start flex-col md:p-10 px-0 py-10">
                   <span className="text-white text-4xl opacity-50">
                     What we don´t know
                   </span>
@@ -122,7 +121,7 @@ function Whatwedontknow() {
                   width="582"
                   height="327"
                   alt="abstract image"
-                  className="img-fluid rounded-5 no-bottom-radius"
+                  className="rounded-t-[36px]"
                   loading="lazy"
                 />
                 <div className="px-10 pb-24 pt-10 h-full">

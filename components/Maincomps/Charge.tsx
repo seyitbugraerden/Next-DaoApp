@@ -5,9 +5,9 @@ import Link from "next/link";
 
 function Charge() {
   return (
-    <div className="bg-black py-36">
+    <div className="bg-black pb-14 pt-32">
       <Container>
-        <div className="flex flex-row items-center gap-16">
+        <div className="flex flex-col xl:flex-row items-center gap-16">
           <div className="text-right min-w-[40%]">
             <span className="text-2xl opacity-50 text-white">What we charge</span>
             <h2 className="font-bold text-5xl text-white">

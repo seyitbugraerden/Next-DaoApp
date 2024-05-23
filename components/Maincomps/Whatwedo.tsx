@@ -6,7 +6,7 @@ function Whatwedo() {
   return (
     <div className="bg-mainColor py-28">
       <Container>
-        <div className="grid grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 xl:grid-cols-2 gap-8">
           <div className="flex flex-col">
             <span className="text-lg text-right text-white opacity-50">
               What we do

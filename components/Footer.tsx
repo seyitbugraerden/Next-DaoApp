@@ -6,7 +6,7 @@ function Footer() {
   return (
     <footer className="bg-mainColor">
       <Container>
-        <div className="container grid grid-cols-4 py-20 text-white">
+        <div className="container grid grid-cols-2 gap-10 xl:grid-cols-4 py-20 text-white">
           <div>
             <Link
               className="text-white hover:opacity-70 duration-500 no-underline"
@@ -27,7 +27,7 @@ function Footer() {
             </Link>
           </div>
           <div className="flex flex-col gap-1">
-            <span>Company</span>
+            <span className="opacity-70">Company</span>
             <Link href="#" className="text-white hover:opacity-70 duration-500">
               About us
             </Link>
@@ -43,7 +43,7 @@ function Footer() {
             </Link>
           </div>
           <div className="flex flex-col gap-1">
-            <span>Services</span>
+            <span className="opacity-70">Services</span>
             <Link href="#" className="text-white hover:opacity-70 duration-500">
               Pricing
             </Link>
@@ -64,7 +64,7 @@ function Footer() {
             </Link>
           </div>
           <div className="flex flex-col gap-1">
-            <span>Support</span>
+            <span className="opacity-70">Support</span>
             <Link href="#" className="text-white hover:opacity-70 duration-500">
               About us
             </Link>

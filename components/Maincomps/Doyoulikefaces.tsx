@@ -7,7 +7,7 @@ function Doyoulikefaces() {
   return (
     <div className="bg-bgColor">
       <Container>
-        <div className="grid grid-cols-2 pt-28 pb-14">
+        <div className="grid grid-cols-1 xl:grid-cols-2 pt-28 pb-14">
           <div>
             <Image
               className="rounded-[36px]"
@@ -18,7 +18,7 @@ function Doyoulikefaces() {
               loading="lazy"
             />
             <Image
-              className="rounded-[36px] relative -top-[40px] -right-[50px]"
+              className="rounded-[36px] relative -top-[40px] xl:-right-[50px]"
               src={img2}
               width="512"
               height="512"
@@ -26,7 +26,7 @@ function Doyoulikefaces() {
               loading="lazy"
             />
           </div>
-          <div className="flex items-start flex-col justify-center p-16">
+          <div className="flex items-start flex-col justify-center md:p-16 py-16 px-4">
             <span className="text-2xl text-start opacity-50">
               Do you like faces?
             </span>

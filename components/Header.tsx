@@ -59,7 +59,7 @@ function Header() {
               href="https://github.com/seyitbugraerden"
               target="_blank"
               aria-label="Download this template"
-              className="border-[1px] no-underline text-white px-3 py-2 rounded-full hover:bg-white hover:!text-black transition animate-pulse text-xs duration-300"
+              className="border-[1px] no-underline text-white px-3 py-2 rounded-full hover:bg-white hover:!text-black transition animate-pulse text-xs duration-300 hidden md:block"
             >
               Go to Github
             </Link>

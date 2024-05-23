@@ -10,9 +10,8 @@ function Customers() {
       <Container>
         <div className="row d-flex gx-5 align-items-center">
           <div
-            className="grid"
+            className="grid grid-cols-1 xl:grid-cols-2"
             style={{
-              gridTemplateColumns: "repeat(2,1fr)",
               alignItems: "start",
               gap: "5rem",
               gridAutoFlow: "dense",
