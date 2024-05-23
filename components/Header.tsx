@@ -31,7 +31,7 @@ async function Header() {
 
             <ul className="flex flex:md-row  items-center justify-center mb-0 gap-3">
               {headerList.map((item) => (
-                <HeaderItem item={item} key={item.index}/>
+                <HeaderItem item={item} key={item.id} />
               ))}
             </ul>
             <Link
