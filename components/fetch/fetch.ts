@@ -15,12 +15,12 @@ export const fetchBlogData = async () => {
   }
 };
 
-export default async function fetchBlog() {
+export const fetchBlog = async () => {
   try {
-    const response = await pb.collection('Blogs').getFullList();
+    const response = await pb.collection("Blogs").getFullList();
     return response;
   } catch (error) {
-    console.error('Error fetching data:', error);
+    console.error("Error fetching data:", error);
     throw error;
   }
-}
+};
