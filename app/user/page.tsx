@@ -2,7 +2,14 @@ import React from "react";
 import Container from "@/components/Container";
 import InputComp from "@/components/Input";
 import Button from "@/components/Button";
-function User() {
+import { fetchUsers } from "@/components/fetch/fetch";
+import { pb } from "@/lib/pb";
+async function User() {
+  const userData = await fetchUsers();
+  const sendData = await pb
+    .collection("Users")
+    .requestVerification("byrardn@gmail.com");
+  console.log(sendData);
   return (
     <div className=" bg-bgColor text-white py-[16.45vh]">
       <Container>

@@ -1,11 +1,11 @@
 import Link from "next/link";
 import React from "react";
 import Container from "./Container";
-import { pb } from "@/lib/pb";
 import HeaderItem from "./header/HeaderItem";
+import { fetchHeaders } from "./fetch/fetch";
 
 async function Header() {
-  const headerList = await pb.collection("Headers").getFullList();
+  const headerList = await fetchHeaders();
   return (
     <header className="bg-mainColor">
       <Container>
