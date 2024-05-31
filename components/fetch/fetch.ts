@@ -6,18 +6,18 @@ export const fetchBlog = async () => {
 };
 
 export const fetchHeaders = async () => {
-  return await pb.collection("Headers").getFullList();
+  return await pb.collection("Headers").getFullList({ requestKey: null });
 };
 
 export const fetchUsers = async () => {
-  return await pb.collection("Users").getFullList();
+  return await pb.collection("Users").getFullList({ requestKey: null });
 };
 
 export const loginUser = async ({ email, password }: loginUserType) => {
   try {
     const authData = await pb
       .collection("Users")
-      .authWithPassword(email, password);
+      .authWithPassword(email, password, { requestKey: null });
     pb.authStore.save(authData.token, authData.record);
     return authData;
   } catch (error) {
