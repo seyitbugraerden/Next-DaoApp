@@ -6,9 +6,11 @@ async function AboutUs() {
   const aboutData = await fetchAboutUs();
   return (
     <>
-      {aboutData.map((item, index) => (
-        <MainText key={index} title={item.title} description={item.description} />
-      ))}
+      <MainText
+        title={aboutData.title}
+        description={aboutData.description}
+        subject={aboutData.subject}
+      />
     </>
   );
 }

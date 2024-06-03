@@ -1,4 +1,5 @@
 export interface mainText {
   title: string;
-  description: any;
+  description: string;
+  subject: string;
 }
