@@ -9,7 +9,6 @@ async function User() {
   const sendData = await pb
     .collection("Users")
     .requestVerification("byrardn@gmail.com");
-  console.log(sendData);
   return (
     <div className=" bg-bgColor text-white py-[16.45vh]">
       <Container>

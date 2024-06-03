@@ -28,50 +28,58 @@ function Footer() {
           </div>
           <div className="flex flex-col gap-1">
             <span className="opacity-70">Company</span>
-            <Link href="/about-us" className="text-white hover:opacity-70 duration-500">
+            <Link
+              href="/about-us"
+              className="text-white hover:opacity-70 duration-500"
+            >
               About us
             </Link>
-            <Link href="/legal" className="text-white hover:opacity-70 duration-500">
+            <Link
+              href="/legal"
+              className="text-white hover:opacity-70 duration-500"
+            >
               Legal
             </Link>
 
-            <Link href="/career" className="text-white hover:opacity-70 duration-500">
+            <Link
+              href="/career"
+              className="text-white hover:opacity-70 duration-500"
+            >
               Career
-            </Link>
-            <Link href="/contact" className="text-white hover:opacity-70 duration-500">
-              Contact
             </Link>
           </div>
           <div className="flex flex-col gap-1">
-            <span className="opacity-70">Services</span>
-            <Link href="#" className="text-white hover:opacity-70 duration-500">
-              Pricing
+            <span className="opacity-70">Pages</span>
+            <Link
+              href="/blogs"
+              className="text-white hover:opacity-70 duration-500"
+            >
+              Blogs
             </Link>
-            <Link href="#" className="text-white hover:opacity-70 duration-500">
-              Products
+            <Link
+              href="/about-us"
+              className="text-white hover:opacity-70 duration-500"
+            >
+              About us
             </Link>
-            <Link href="#" className="text-white hover:opacity-70 duration-500">
-              Customers
+            <Link
+              href="/legal"
+              className="text-white hover:opacity-70 duration-500"
+            >
+              Legal
             </Link>
-            <Link href="#" className="text-white hover:opacity-70 duration-500">
-              Portfolio
-            </Link>
-            <Link href="#" className="text-white hover:opacity-70 duration-500">
-              Success Stories
-            </Link>
-            <Link href="#" className="text-white hover:opacity-70 duration-500">
-              More
+
+            <Link
+              href="/career"
+              className="text-white hover:opacity-70 duration-500"
+            >
+              Career
             </Link>
           </div>
           <div className="flex flex-col gap-1">
             <span className="opacity-70">Support</span>
-            <Link href="#" className="text-white hover:opacity-70 duration-500">
-              Legal
-            </Link>
-            <Link href="#" className="text-white hover:opacity-70 duration-500">
-              Career
-            </Link>
-            <Link href="#" className="text-white hover:opacity-70 duration-500">
+
+            <Link href="/contact" className="text-white hover:opacity-70 duration-500">
               Contact
             </Link>
           </div>
