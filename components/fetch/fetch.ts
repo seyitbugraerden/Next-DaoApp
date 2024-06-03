@@ -26,6 +26,9 @@ export const loginUser = async ({ email, password }: loginUserType) => {
   }
 };
 
-export const fetchAboutUs = async()=>{
-  return await pb.collection('about_us').getOne('hkfgmjfldkcmhgj')
-}
+export const fetchAboutUs = async () => {
+  return await pb.collection("about_us").getOne("hkfgmjfldkcmhgj");
+};
+export const fetchLegal = async () => {
+  return await pb.collection("legal").getOne("tahhsb5pf3pm0sz");
+};

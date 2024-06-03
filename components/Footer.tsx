@@ -31,7 +31,7 @@ function Footer() {
             <Link href="/about-us" className="text-white hover:opacity-70 duration-500">
               About us
             </Link>
-            <Link href="#" className="text-white hover:opacity-70 duration-500">
+            <Link href="/legal" className="text-white hover:opacity-70 duration-500">
               Legal
             </Link>
 

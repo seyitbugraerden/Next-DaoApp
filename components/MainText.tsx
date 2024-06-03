@@ -2,7 +2,7 @@ import React from "react";
 import { mainText } from "./types/mainText";
 import Container from "./Container";
 
-const MainText: React.FC<mainText> = ({ title, description, subject}) => {
+const MainText: React.FC<mainText> = ({ title, description, subject }) => {
   return (
     <>
       <div className="bg-mainColor text-white text-center py-60">
@@ -15,7 +15,7 @@ const MainText: React.FC<mainText> = ({ title, description, subject}) => {
             className="text-xl opacity-50 xl:max-w-[40vw] mx-auto mt-10 mb-5"
             aria-hidden="false"
           >
-            {description}
+            {description.split("/n/")}
           </p>
         </Container>
       </div>
