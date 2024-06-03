@@ -1,12 +1,7 @@
 import React from "react";
+import { InputProps } from "./types/input";
 
-interface Props {
-  type: string;
-  label: string;
-  subtitle: string;
-}
-
-const InputComp: React.FC<Props> = ({ type, label, subtitle }) => {
+const InputComp: React.FC<InputProps> = ({ type, label, subtitle }) => {
   return (
     <div className="flex flex-col items-start">
       <div>{label}</div>

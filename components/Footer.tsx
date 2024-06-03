@@ -10,7 +10,7 @@ function Footer() {
           <div>
             <Link
               className="text-white hover:opacity-70 duration-500 no-underline"
-              href="index.html"
+              href="/"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -28,7 +28,7 @@ function Footer() {
           </div>
           <div className="flex flex-col gap-1">
             <span className="opacity-70">Company</span>
-            <Link href="#" className="text-white hover:opacity-70 duration-500">
+            <Link href="/about-us" className="text-white hover:opacity-70 duration-500">
               About us
             </Link>
             <Link href="#" className="text-white hover:opacity-70 duration-500">
@@ -65,9 +65,6 @@ function Footer() {
           </div>
           <div className="flex flex-col gap-1">
             <span className="opacity-70">Support</span>
-            <Link href="#" className="text-white hover:opacity-70 duration-500">
-              About us
-            </Link>
             <Link href="#" className="text-white hover:opacity-70 duration-500">
               Legal
             </Link>

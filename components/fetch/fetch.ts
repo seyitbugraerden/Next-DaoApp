@@ -25,3 +25,7 @@ export const loginUser = async ({ email, password }: loginUserType) => {
     throw error;
   }
 };
+
+export const fetchAboutUs = async()=>{
+  return await pb.collection('about_us').getFullList()
+}
