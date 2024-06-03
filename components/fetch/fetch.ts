@@ -32,3 +32,6 @@ export const fetchAboutUs = async () => {
 export const fetchLegal = async () => {
   return await pb.collection("legal").getOne("tahhsb5pf3pm0sz");
 };
+export const fetchCareer = async () => {
+  return await pb.collection("career").getOne("dfhnbvgyjklytre");
+};

@@ -35,10 +35,10 @@ function Footer() {
               Legal
             </Link>
 
-            <Link href="#" className="text-white hover:opacity-70 duration-500">
+            <Link href="/career" className="text-white hover:opacity-70 duration-500">
               Career
             </Link>
-            <Link href="#" className="text-white hover:opacity-70 duration-500">
+            <Link href="/contact" className="text-white hover:opacity-70 duration-500">
               Contact
             </Link>
           </div>
