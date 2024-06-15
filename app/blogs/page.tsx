@@ -13,12 +13,18 @@ async function Content() {
   const token: any = cookies().get("DaoAuth")?.value;
   const decodedToken = jwt.decode(token) as JwtPayload;
   const userId = decodedToken?.id;
-  const record = await pb.collection('users').getOne(userId, {
-    expand: 'relField1,relField2.subRelField',
-});
+  let mainText =
+    "Welcome to a journey through the lens of everyday life, where each moment is captured in words that resonate with the essence of our experiences. From reflections on personal growth to explorations of the world around us, this blog invites you to delve into stories that inspire, provoke thought, and ignite curiosity. It's a celebration of the ordinary and the extraordinary, woven together in a tapestry of emotions and insights. Join us as we navigate the intricacies of existence and discover the beauty in both the expected and the unexpected.";
+  if (userId) {
+    const record = await pb.collection("users").getOne(userId, {
+      expand: "relField1,relField2.subRelField",
+    });
+    mainText = record.blogtext;
+  }
+
   return (
     <>
-      <ContentPage mainText={record.blogtext}/>
+      <ContentPage mainText={mainText} />
       <ContentImage />
       {blogVeri.map((item: blog) =>
         item.user_id === userId ? <ContentItem item={item} key={item.id} /> : ""
