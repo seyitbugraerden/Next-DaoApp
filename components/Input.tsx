@@ -1,5 +1,5 @@
 import React from "react";
-import { InputProps } from "./types/input";
+import { InputProps } from "../types/input";
 
 const InputComp: React.FC<InputProps> = ({ type, label, subtitle, onChange }) => {
   return (

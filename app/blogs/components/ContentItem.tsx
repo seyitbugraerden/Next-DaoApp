@@ -1,6 +1,6 @@
 import React from "react";
 import Container from "@/components/Container";
-import { blog } from "@/components/types/blog";
+import { blog } from "@/types/blog";
 
 export const ContentItem: React.FC<{ item: blog }> = ({ item }) => {
   return (

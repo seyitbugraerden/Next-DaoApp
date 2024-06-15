@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import Container from "@/components/Container";
 import InputComp from "@/components/Input";
 import Button from "@/components/Button";
-import { login } from "@/components/types/login";
+import { login } from "@/types/login";
 import {  toast } from "react-toastify";
 function User() {
   const [logInData, setLogInData] = useState<login>({

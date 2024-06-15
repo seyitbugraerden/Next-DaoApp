@@ -6,4 +6,5 @@ export interface blog {
   id: string;
   title: string;
   updated: string;
+  user_id: string;
 }

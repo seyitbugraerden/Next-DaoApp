@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React from "react";
-import { header } from "../types/header";
+import { header } from "../../types/header";
 
 const HeaderItem: React.FC<header> = ({ item }) => {
   return (

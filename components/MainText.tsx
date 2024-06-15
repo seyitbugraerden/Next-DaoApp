@@ -1,5 +1,5 @@
 import React from "react";
-import { mainText } from "./types/mainText";
+import { mainText } from "../types/mainText";
 import Container from "./Container";
 
 const MainText: React.FC<mainText> = ({ title, description, subject }) => {

@@ -1,5 +1,5 @@
 import { pb } from "@/lib/pb";
-import { loginUserType } from "../types/loginUserType";
+import { loginUserType } from "../../types/loginUserType";
 
 export const fetchBlog = async () => {
   return await pb.collection("Blogs").getFullList();
