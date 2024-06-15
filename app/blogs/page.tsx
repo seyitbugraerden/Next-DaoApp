@@ -7,7 +7,6 @@ import { ContentItem } from "./components/ContentItem";
 
 async function Content() {
   const blogVeri: any = await fetchBlog();
-  console.log(blogVeri)
   return (
     <>
       <ContentPage />
