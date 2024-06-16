@@ -4,8 +4,11 @@ import Container from "@/components/Container";
 import InputComp from "@/components/Input";
 import Button from "@/components/Button";
 import { login } from "@/types/login";
-import {  toast } from "react-toastify";
+import { toast } from "react-toastify";
 function User() {
+  if (document.cookie) {
+    window.location.href = "/";
+  }
   const [logInData, setLogInData] = useState<login>({
     email: "",
     password: "",
@@ -14,7 +17,6 @@ function User() {
     toast(infoText, {
       theme: "dark",
     });
-
   const loginFunc = async (e: any) => {
     e.preventDefault();
     const logData = {

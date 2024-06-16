@@ -28,7 +28,6 @@ async function Header() {
               </svg>
               <span className="text-bold text-3xl !no-underline">Klar</span>
             </Link>
-
             <ul className="flex flex:md-row  items-center justify-center mb-0 gap-3">
               {headerList.map((item) => (
                 <HeaderItem item={item} key={item.id} />

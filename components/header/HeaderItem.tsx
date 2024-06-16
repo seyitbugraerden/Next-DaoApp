@@ -1,9 +1,8 @@
 import Link from "next/link";
 import React from "react";
-import logout from "@/public/logout.svg";
-import Image from "next/image";
 import { header } from "../../types/header";
 import { cookies } from "next/headers";
+import HeaderLogOut from "./HeaderLogOut";
 
 const HeaderItem: React.FC<header> = ({ item }) => {
   const token: any = cookies().get("DaoAuth");
@@ -11,12 +10,7 @@ const HeaderItem: React.FC<header> = ({ item }) => {
     <li>
       {item.title === "User" ? (
         token ? (
-          <Image
-            src={logout}
-            alt="Log Out"
-            height={30}
-            className="hover:opacity-50 transiiton duration-300 cursor-pointer"
-          />
+          <HeaderLogOut />
         ) : (
           <Link
             href={`${item.link}`}
