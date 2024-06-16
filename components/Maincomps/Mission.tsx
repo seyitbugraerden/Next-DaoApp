@@ -2,25 +2,20 @@ import React from "react";
 import Container from "../Container";
 import Button from "../Button";
 import Link from "next/link";
+import { pb } from "@/lib/pb";
 
-function Mission() {
+async function Mission() {
+  const mission = await pb.collection("mission").getOne("asdasdasdasdasd");
+  console.log(mission);
   return (
     <div className="bg-mainColor text-white text-center py-60">
       <Container>
-        <span className="opacity-50">Our Mission</span>
+        <span className="opacity-50">{mission.subject}</span>
         <h1 className="text-6xl font-bold xl:max-w-[50vw] mx-auto">
-          Ordinary Stuff for Cool People: A Blog for the Extraordinary{" "}
+          {mission.title}
         </h1>
         <p className="text-xl opacity-50 xl:max-w-[40vw] mx-auto mt-10 mb-5">
-          Here we go. Our mission is to inspire, educate, and entertain through
-          insightful and meaningful content. We believe in the power of
-          knowledge to transform lives, which is why we deliver high-quality
-          articles that spark curiosity and encourage exploration of new ideas.{" "}
-          <br /> In this website, we value authenticity, creativity, and
-          community. We aim to create a welcoming space where diverse voices are
-          heard, and everyone feels empowered to share their thoughts. Join us
-          on this journey of discovery and growth. Together, let's make every
-          read a step towards a more informed and inspired life.
+          {mission.description}
         </p>
         <Link href="/about-us">
           <Button>
