@@ -6,8 +6,11 @@ import img2 from "@/public/images/abstract2.webp";
 import img3 from "@/public/images/abstract17.webp";
 import img4 from "@/public/images/abstract4.webp";
 import Container from "../Container";
+import { pb } from "@/lib/pb";
 
-function Whatwedontknow() {
+async function Whatwedontknow() {
+  const resultList = await pb.collection("Blogs").getList(1, 6);
+  const blogItems = resultList.items.reverse();
   return (
     <div className="bg-black py-36">
       <Container>
@@ -30,20 +33,13 @@ function Whatwedontknow() {
                 loading="lazy"
               />
               <div className="px-10 pb-24 pt-10">
-                <h2 className="text-white text-4xl font-medium">
-                  Ipsum dolor est
+                <h2 className="text-white text-4xl font-medium line-clamp-2">
+                  {blogItems[0].title}
                 </h2>
-                <p className="text-white opacity-50 mt-2 text-lg">
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                  diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                  aliquyam erat.
+                <p className="py-2 text-white opacity-50 italic">{blogItems[0].id}</p>
+                <p className="text-white opacity-50 mt-2 text-lg line-clamp-3 text-justify">
+                  {blogItems[0].desc}
                 </p>
-                <Link
-                  href="#"
-                  className="text-white underline text-xl relative top-12"
-                >
-                  Read more
-                </Link>
               </div>
             </div>
             <div className="bg-bgColor rounded-[36px]">
@@ -57,20 +53,34 @@ function Whatwedontknow() {
                   loading="lazy"
                 />
                 <div className="px-10 pb-24 pt-10">
-                  <h2 className="text-white text-4xl font-medium">
-                    Ipsum dolor est
+                  <h2 className="text-white text-4xl font-medium line-clamp-2">
+                    {blogItems[1].title}
                   </h2>
-                  <p className="text-white opacity-50 mt-2 text-lg">
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                    diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                    aliquyam erat.
+                  <p className="py-2 text-white opacity-50 italic">{blogItems[1].id}</p>
+                  <p className="text-white opacity-50 mt-2 text-lg line-clamp-3 text-justify">
+                    {blogItems[1].desc}
                   </p>
-                  <Link
-                    href="#"
-                    className="text-white underline text-xl relative top-12"
-                  >
-                    Read more
-                  </Link>
+                </div>
+              </div>
+            </div>
+            <div className="bg-bgColor rounded-[36px]">
+              <div className="bg-dark shadow rounded-5 p-0">
+                <Image
+                  src={img3}
+                  width="582"
+                  height="390"
+                  alt="abstract image"
+                  className="rounded-t-[36px]"
+                  loading="lazy"
+                />
+                <div className="px-10 pb-24 pt-10">
+                  <h2 className="text-white text-4xl font-medium line-clamp-2">
+                    {blogItems[2].title}
+                  </h2>
+                  <p className="py-2 text-white opacity-50 italic">{blogItems[2].id}</p>
+                  <p className="text-white opacity-50 mt-2 text-lg line-clamp-3 text-justify">
+                    {blogItems[2].desc}
+                  </p>
                 </div>
               </div>
             </div>
@@ -80,7 +90,7 @@ function Whatwedontknow() {
               <div className="bg-dark shadow rounded-5 p-0">
                 <div className="flex justify-center items-start flex-col md:p-10 px-0 py-10">
                   <span className="text-white text-4xl opacity-50">
-                    Top Blogs
+                    Last 5 Blogs
                   </span>
                   <h2 className="text-white text-6xl">
                     Here you can find access to prominently reviewed and
@@ -97,20 +107,13 @@ function Whatwedontknow() {
                     loading="lazy"
                   />
                   <div className="px-10 pb-24 pt-10 h-full">
-                    <h2 className="text-white text-4xl font-medium">
-                      Ipsum dolor est
+                    <h2 className="text-white text-4xl font-medium line-clamp-2">
+                      {blogItems[4].title}
                     </h2>
-                    <p className="text-white opacity-50 mt-2 text-lg">
-                      Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-                      sed diam nonumy eirmod tempor invidunt ut labore et dolore
-                      magna aliquyam erat.
+                    <p className="py-2 text-white opacity-50 italic">{blogItems[4].id}</p>
+                    <p className="text-white opacity-50 mt-2 text-lg line-clamp-3 text-justify">
+                      {blogItems[4].desc}
                     </p>
-                    <Link
-                      href="#"
-                      className="text-white underline text-xl relative top-12"
-                    >
-                      Read more
-                    </Link>
                   </div>
                 </div>
               </div>
@@ -126,20 +129,13 @@ function Whatwedontknow() {
                   loading="lazy"
                 />
                 <div className="px-10 pb-24 pt-10 h-full">
-                  <h2 className="text-white text-4xl font-medium">
-                    Ipsum dolor est
+                  <h2 className="text-white text-4xl font-medium line-clamp-2">
+                    {blogItems[3].title}
                   </h2>
-                  <p className="text-white opacity-50 mt-2 text-lg">
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                    diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                    aliquyam erat.
+                  <p className="py-2 text-white opacity-50 italic">{blogItems[3].id}</p>
+                  <p className="text-white opacity-50 mt-2 text-lg line-clamp-3 text-justify">
+                    {blogItems[3].desc}
                   </p>
-                  <Link
-                    href="#"
-                    className="text-white underline text-xl relative top-12"
-                  >
-                    Read more
-                  </Link>
                 </div>
               </div>
             </div>
