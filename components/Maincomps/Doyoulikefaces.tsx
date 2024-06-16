@@ -27,12 +27,11 @@ function Doyoulikefaces() {
             />
           </div>
           <div className="flex items-start flex-col justify-center md:p-16 py-16 px-4">
-            <span className="text-2xl text-start opacity-50">
-              Do you like faces?
+            <span className="text-white text-4xl opacity-50">
+              Do you like blogs?
             </span>
             <h2 className="text-6xl text-white">
-              We constantly adding new images to our website. Does it make
-              sense? No!
+              Our users constantly adding new blogs to our website. Does it usefull? Definetly!
             </h2>
           </div>
         </div>

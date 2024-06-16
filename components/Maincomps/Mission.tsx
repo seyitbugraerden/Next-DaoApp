@@ -9,12 +9,18 @@ function Mission() {
       <Container>
         <span className="opacity-50">Our Mission</span>
         <h1 className="text-6xl font-bold xl:max-w-[50vw] mx-auto">
-          We do ordinary stuff for cool people
+          Ordinary Stuff for Cool People: A Blog for the Extraordinary{" "}
         </h1>
         <p className="text-xl opacity-50 xl:max-w-[40vw] mx-auto mt-10 mb-5">
-          We are some sort of DAO working with AI, NFT´s, web 4.0 and the so
-          called blockchain...in the Metaverse. You don´t understand a word? No
-          problem, we neither!
+          Here we go. Our mission is to inspire, educate, and entertain through
+          insightful and meaningful content. We believe in the power of
+          knowledge to transform lives, which is why we deliver high-quality
+          articles that spark curiosity and encourage exploration of new ideas.{" "}
+          <br /> In this website, we value authenticity, creativity, and
+          community. We aim to create a welcoming space where diverse voices are
+          heard, and everyone feels empowered to share their thoughts. Join us
+          on this journey of discovery and growth. Together, let's make every
+          read a step towards a more informed and inspired life.
         </p>
         <Link href="/about-us">
           <Button>

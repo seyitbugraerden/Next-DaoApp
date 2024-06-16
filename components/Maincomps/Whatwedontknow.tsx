@@ -76,14 +76,15 @@ function Whatwedontknow() {
             </div>
           </div>
           <div className="flex flex-col gap-24">
-            <div className="rounded-[36px]" >
+            <div className="rounded-[36px]">
               <div className="bg-dark shadow rounded-5 p-0">
                 <div className="flex justify-center items-start flex-col md:p-10 px-0 py-10">
                   <span className="text-white text-4xl opacity-50">
-                    What we don´t know
+                    Top Blogs
                   </span>
                   <h2 className="text-white text-6xl">
-                    There is a lot we don´t know. Here is a small sneak peek
+                    Here you can find access to prominently reviewed and
+                    noteworthy contents.
                   </h2>
                 </div>
                 <div className="rounded-5 bg-bgColor rounded-[36px]">
@@ -96,21 +97,21 @@ function Whatwedontknow() {
                     loading="lazy"
                   />
                   <div className="px-10 pb-24 pt-10 h-full">
-                  <h2 className="text-white text-4xl font-medium">
-                    Ipsum dolor est
-                  </h2>
-                  <p className="text-white opacity-50 mt-2 text-lg">
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                    diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                    aliquyam erat.
-                  </p>
-                  <Link
-                    href="#"
-                    className="text-white underline text-xl relative top-12"
-                  >
-                    Read more
-                  </Link>
-                </div>
+                    <h2 className="text-white text-4xl font-medium">
+                      Ipsum dolor est
+                    </h2>
+                    <p className="text-white opacity-50 mt-2 text-lg">
+                      Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                      sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                      magna aliquyam erat.
+                    </p>
+                    <Link
+                      href="#"
+                      className="text-white underline text-xl relative top-12"
+                    >
+                      Read more
+                    </Link>
+                  </div>
                 </div>
               </div>
             </div>
