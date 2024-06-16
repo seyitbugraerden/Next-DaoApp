@@ -16,6 +16,7 @@ function User() {
   const notify = (infoText: any) =>
     toast(infoText, {
       theme: "dark",
+      position: "bottom-center",
     });
   const loginFunc = async (e: any) => {
     e.preventDefault();
