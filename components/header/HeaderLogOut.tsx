@@ -13,7 +13,7 @@ function HeaderLogOut() {
       alt="Log Out"
       height={30}
       width={30}
-      className="hover:opacity-50 transiiton duration-300 cursor-pointer"
+      className="hover:opacity-50 transiiton duration-300 cursor-pointer inline-block"
     />
   );
 }

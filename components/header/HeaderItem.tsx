@@ -3,6 +3,7 @@ import React from "react";
 import { header } from "../../types/header";
 import { cookies } from "next/headers";
 import HeaderLogOut from "./HeaderLogOut";
+import HeaderProfile from "./HeaderProfile";
 
 const HeaderItem: React.FC<header> = ({ item }) => {
   const token: any = cookies().get("DaoAuth");
@@ -10,7 +11,10 @@ const HeaderItem: React.FC<header> = ({ item }) => {
     <li>
       {item.title === "User" ? (
         token ? (
-          <HeaderLogOut />
+          <>
+            <HeaderLogOut />
+            <HeaderProfile />
+          </>
         ) : (
           <Link
             href={`${item.link}`}
