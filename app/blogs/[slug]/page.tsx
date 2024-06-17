@@ -35,7 +35,7 @@ function Page() {
 
     fetchRecords();
     reuleaux.register();
-  }, []);
+  }, [slugElement]);
   return (
     <div className="bg-bgColor relative">
       <Loader />

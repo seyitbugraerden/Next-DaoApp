@@ -23,7 +23,7 @@ const ProfileInt: React.FC<any> = ({ userId }) => {
     };
 
     fetchUserData();
-  }, []);
+  }, [userId]);
 
   const updateUser = async (e: any) => {
     e.preventDefault();
