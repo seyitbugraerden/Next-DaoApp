@@ -5,14 +5,21 @@ import InputComp from "@/components/Input";
 import Button from "@/components/Button";
 import { login } from "@/types/login";
 import { toast } from "react-toastify";
+import Sign from "@/components/user/Sign";
+import { useCookies } from "react-cookie";
+import { useRouter } from "next/navigation";
+
 function User() {
-  if (document.cookie) {
-    window.location.href = "/";
-  }
+  const [cookies, setCookie, removeCookie] = useCookies(["DaoAuth"]);
   const [logInData, setLogInData] = useState<login>({
     email: "",
     password: "",
   });
+  const router = useRouter();
+
+  if (cookies) {
+    router.push("/");
+  }
   const notify = (infoText: any) =>
     toast(infoText, {
       theme: "dark",
@@ -44,7 +51,7 @@ function User() {
         notify("Login successful");
         document.cookie = `DaoAuth=${responseData.token}`;
         setTimeout(() => {
-          window.location.href = "/";
+          router.push("/");
         }, 2000);
         return responseData;
       }
@@ -56,28 +63,7 @@ function User() {
     <div className=" bg-bgColor text-white py-[16.45vh]">
       <Container>
         <div className="flex flex-col xl:flex-row justify-between gap-y-24">
-          <form className="flex flex-col gap-5">
-            <h2 className="text-4xl">Register a new account</h2>
-            <InputComp
-              type="email"
-              label="E-mail address"
-              subtitle="We'll never share your email with anyone else.
- "
-            />
-            <InputComp type="password" label="Password" subtitle="" />
-            <div className="flex flex-row items-start justify-start gap-4">
-              <InputComp type="checkbox" label="" subtitle="" />
-              <p className="xl:max-w-[30vw] text-xs">
-                If you really don´t want any newsletter check this box. Then you
-                just agree to receive our marketing mails and product stuff. If
-                you check this box we will not send out our newsletter to you at
-                all...on mondays.
-              </p>
-            </div>
-            <div className="relative">
-              <Button>Submit</Button>
-            </div>
-          </form>
+          <Sign />
           <form
             onSubmit={(e) => {
               loginFunc(e);

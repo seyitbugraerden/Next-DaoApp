@@ -2,11 +2,13 @@
 import Image from "next/image";
 import React from "react";
 import profile from "@/public/profile.svg";
+import { useRouter } from "next/navigation";
 function HeaderProfile() {
+  const Router = useRouter();
   return (
     <Image
       onClick={() => {
-        window.location.href = "/settings";
+        Router.push("/settings");
       }}
       src={profile}
       alt="Profile Icon"

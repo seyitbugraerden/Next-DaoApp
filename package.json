@@ -13,6 +13,7 @@
     "next": "14.2.3",
     "pocketbase": "^0.21.2",
     "react": "^18",
+    "react-cookie": "^7.1.4",
     "react-dom": "^18",
     "react-toastify": "^10.0.5",
     "sharp": "^0.33.4"

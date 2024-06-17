@@ -6,7 +6,6 @@ import { pb } from "@/lib/pb";
 
 async function Mission() {
   const mission = await pb.collection("mission").getOne("asdasdasdasdasd");
-  console.log(mission);
   return (
     <div className="bg-mainColor text-white text-center py-60">
       <Container>

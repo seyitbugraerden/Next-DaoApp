@@ -1,13 +1,15 @@
 "use client";
 import logout from "@/public/logout.svg";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 function HeaderLogOut() {
+  const Router = useRouter();
   return (
     <Image
       onClick={() => {
         document.cookie = `DaoAuth=; max-age=0;`;
-        window.location.href = "/";
+        Router.push("/");
       }}
       src={logout}
       alt="Log Out"
