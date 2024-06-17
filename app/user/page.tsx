@@ -17,7 +17,10 @@ function User() {
   });
   const router = useRouter();
 
-  if (cookies) {
+  if (cookies.DaoAuth) {
+    setTimeout(() => {
+      router.refresh();
+    }, 1000);
     router.push("/");
   }
   const notify = (infoText: any) =>

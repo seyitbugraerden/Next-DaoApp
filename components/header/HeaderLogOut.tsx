@@ -2,14 +2,17 @@
 import logout from "@/public/logout.svg";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
+import { useCookies } from "react-cookie";
 
 function HeaderLogOut() {
+  const [cookies, setCookie, removeCookie] = useCookies(["DaoAuth"]);
   const Router = useRouter();
   return (
     <Image
       onClick={() => {
         document.cookie = `DaoAuth=; max-age=0;`;
-        Router.push("/");
+        removeCookie("DaoAuth");
+        Router.refresh();
       }}
       src={logout}
       alt="Log Out"
