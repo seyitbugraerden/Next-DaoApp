@@ -1,10 +1,12 @@
 import Container from "@/components/Container";
 import Link from "next/link";
 import React from "react";
+import Loader from "../settings/components/loader";
 
 function ContactPage() {
   return (
     <>
+      <Loader />
       <div className="bg-mainColor text-white text-center py-60">
         <Container>
           <span className="opacity-50">Contact</span>

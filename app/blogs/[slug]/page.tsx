@@ -4,6 +4,7 @@ import { usePathname } from "next/navigation";
 import React, { useEffect, useState } from "react";
 import "ldrs/ring";
 import { reuleaux } from "ldrs";
+import Loader from "@/app/settings/components/loader";
 interface Blog {
   id: string;
   slug: string;
@@ -37,6 +38,7 @@ function Page() {
   }, []);
   return (
     <div className="bg-bgColor relative">
+      <Loader />
       <Container>
         <div className="text-white py-24 xl:max-w-[30vw] mx-auto">
           {selectedBlog ? (
@@ -52,16 +54,7 @@ function Page() {
               </p>
             </>
           ) : (
-            <div className="absolute top-[50%] left-[48%]">
-              <l-reuleaux
-                size="37"
-                stroke="5"
-                stroke-length="0.15"
-                bg-opacity="0.1"
-                speed="1.2"
-                color="white"
-              ></l-reuleaux>
-            </div>
+            ""
           )}
         </div>
       </Container>

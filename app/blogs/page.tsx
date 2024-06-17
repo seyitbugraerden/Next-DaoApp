@@ -7,6 +7,7 @@ import { ContentItem } from "./components/ContentItem";
 import { cookies } from "next/headers";
 import jwt, { JwtPayload } from "jsonwebtoken";
 import { pb } from "@/lib/pb";
+import Loader from "../settings/components/loader";
 
 async function Content() {
   const blogVeri: any = await fetchBlog();
@@ -24,6 +25,7 @@ async function Content() {
 
   return (
     <>
+      <Loader />
       <ContentPage mainText={mainText} />
       <ContentImage />
       {blogVeri.map((item: blog) =>

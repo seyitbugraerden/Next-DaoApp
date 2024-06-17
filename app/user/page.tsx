@@ -8,6 +8,7 @@ import { toast } from "react-toastify";
 import Sign from "@/components/user/Sign";
 import { useCookies } from "react-cookie";
 import { useRouter } from "next/navigation";
+import Loader from "../settings/components/loader";
 
 function User() {
   const [cookies, setCookie, removeCookie] = useCookies(["DaoAuth"]);
@@ -64,6 +65,7 @@ function User() {
   };
   return (
     <div className=" bg-bgColor text-white py-[16.45vh]">
+      <Loader />
       <Container>
         <div className="flex flex-col xl:flex-row justify-between gap-y-24">
           <Sign />

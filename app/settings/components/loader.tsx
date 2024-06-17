@@ -7,10 +7,10 @@ function Loader() {
   const [delay, setDelay] = useState(true);
   setTimeout(() => {
     setDelay(false);
-  }, 3000);
+  }, 1000);
   return (
     <div
-      className={`loader-section flex justify-center items-center w-full h-full absolute bg-black ${
+      className={`loader-section flex justify-center items-center w-screen h-screen top-0 left-0 fixed bg-black z-[9999] ${
         !delay && "hidden"
       }`}
     >
