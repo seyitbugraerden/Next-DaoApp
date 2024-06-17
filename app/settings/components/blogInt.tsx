@@ -3,7 +3,11 @@ import Button from "@/components/Button";
 import InputComp from "@/components/Input";
 import React, { useState } from "react";
 
-const BlogInt: React.FC<any> = ({ userId }) => {
+type blogIng = {
+  userId?: any;
+};
+
+const BlogInt: React.FC<blogIng> = ({ userId }) => {
   const [newBlog, setNewBlog] = useState({
     title: "",
     desc: "",

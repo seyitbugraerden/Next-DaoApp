@@ -6,6 +6,7 @@ import jwt, { JwtPayload } from "jsonwebtoken";
 import { pb } from "@/lib/pb";
 import ProfileInt from "./components/profileInt";
 import BlogInt from "./components/blogInt";
+import BlogList from "./components/blogList";
 
 async function Settings() {
   const token: any = cookies().get("DaoAuth")?.value;
@@ -17,7 +18,10 @@ async function Settings() {
       <Container>
         <div className="grid xl:grid-cols-2 gap-14  mx-auto">
           <ProfileInt userId={userId} />
-          <BlogInt userId={userId} />
+          <div>
+            <BlogInt userId={userId} />
+            <BlogList userId={userId} />
+          </div>
         </div>
       </Container>
     </div>
