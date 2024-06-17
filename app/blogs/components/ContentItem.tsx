@@ -18,6 +18,7 @@ export const ContentItem: React.FC<{ item: blog }> = ({ item }) => {
           <div className="col-span-2 xl:col-span-1">
             <div className="bg-bgColor p-6">
               <p>{item.created.slice(0, 10).replace(/-/g, "/")}</p>
+              <p className="opacity-50 italic text-xs">{item.user_id}</p>
             </div>
           </div>
         </div>

@@ -10,7 +10,6 @@ function HeaderLogOut() {
   return (
     <Image
       onClick={() => {
-        document.cookie = `DaoAuth=; max-age=0;`;
         removeCookie("DaoAuth");
         Router.refresh();
       }}

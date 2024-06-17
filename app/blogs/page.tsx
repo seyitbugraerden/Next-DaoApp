@@ -27,7 +27,11 @@ async function Content() {
       <ContentPage mainText={mainText} />
       <ContentImage />
       {blogVeri.map((item: blog) =>
-        item.user_id === userId ? <ContentItem item={item} key={item.id} /> : ""
+        item.user_id === userId ? (
+          <ContentItem item={item} key={item.id} />
+        ) : (
+          <ContentItem item={item} key={item.id} />
+        )
       )}
     </>
   );

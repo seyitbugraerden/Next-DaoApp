@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "jsonwebtoken": "^9.0.2",
+    "ldrs": "^1.0.2",
     "next": "14.2.3",
     "pocketbase": "^0.21.2",
     "react": "^18",

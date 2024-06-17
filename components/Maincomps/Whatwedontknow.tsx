@@ -33,10 +33,14 @@ async function Whatwedontknow() {
                 loading="lazy"
               />
               <div className="px-10 pb-24 pt-10">
-                <h2 className="text-white text-4xl font-medium line-clamp-2">
-                  {blogItems[0].title}
-                </h2>
-                <p className="py-2 text-white opacity-50 italic">{blogItems[0].id}</p>
+                <Link href={`blogs/${blogItems[0].slug}`}>
+                  <h2 className="text-white text-4xl font-medium line-clamp-2">
+                    {blogItems[0].title}
+                  </h2>
+                </Link>
+                <p className="py-2 text-white opacity-50 italic">
+                  {blogItems[0].user_id}
+                </p>
                 <p className="text-white opacity-50 mt-2 text-lg line-clamp-3 text-justify">
                   {blogItems[0].desc}
                 </p>
@@ -53,10 +57,14 @@ async function Whatwedontknow() {
                   loading="lazy"
                 />
                 <div className="px-10 pb-24 pt-10">
-                  <h2 className="text-white text-4xl font-medium line-clamp-2">
-                    {blogItems[1].title}
-                  </h2>
-                  <p className="py-2 text-white opacity-50 italic">{blogItems[1].id}</p>
+                  <Link href={`blogs/${blogItems[1].slug}`}>
+                    <h2 className="text-white text-4xl font-medium line-clamp-2">
+                      {blogItems[1].title}
+                    </h2>
+                  </Link>
+                  <p className="py-2 text-white opacity-50 italic">
+                    {blogItems[1].user_id}
+                  </p>
                   <p className="text-white opacity-50 mt-2 text-lg line-clamp-3 text-justify">
                     {blogItems[1].desc}
                   </p>
@@ -74,10 +82,14 @@ async function Whatwedontknow() {
                   loading="lazy"
                 />
                 <div className="px-10 pb-24 pt-10">
-                  <h2 className="text-white text-4xl font-medium line-clamp-2">
-                    {blogItems[2].title}
-                  </h2>
-                  <p className="py-2 text-white opacity-50 italic">{blogItems[2].id}</p>
+                  <Link href={`blogs/${blogItems[2].slug}`}>
+                    <h2 className="text-white text-4xl font-medium line-clamp-2">
+                      {blogItems[2].title}
+                    </h2>
+                  </Link>
+                  <p className="py-2 text-white opacity-50 italic">
+                    {blogItems[2].user_id}
+                  </p>
                   <p className="text-white opacity-50 mt-2 text-lg line-clamp-3 text-justify">
                     {blogItems[2].desc}
                   </p>
@@ -107,10 +119,14 @@ async function Whatwedontknow() {
                     loading="lazy"
                   />
                   <div className="px-10 pb-24 pt-10 h-full">
-                    <h2 className="text-white text-4xl font-medium line-clamp-2">
-                      {blogItems[4].title}
-                    </h2>
-                    <p className="py-2 text-white opacity-50 italic">{blogItems[4].id}</p>
+                    <Link href={`blogs/${blogItems[4].slug}`}>
+                      <h2 className="text-white text-4xl font-medium line-clamp-2">
+                        {blogItems[4].title}
+                      </h2>
+                    </Link>
+                    <p className="py-2 text-white opacity-50 italic">
+                      {blogItems[4].user_id}
+                    </p>
                     <p className="text-white opacity-50 mt-2 text-lg line-clamp-3 text-justify">
                       {blogItems[4].desc}
                     </p>
@@ -129,10 +145,14 @@ async function Whatwedontknow() {
                   loading="lazy"
                 />
                 <div className="px-10 pb-24 pt-10 h-full">
-                  <h2 className="text-white text-4xl font-medium line-clamp-2">
-                    {blogItems[3].title}
-                  </h2>
-                  <p className="py-2 text-white opacity-50 italic">{blogItems[3].id}</p>
+                  <Link href={`blogs/${blogItems[3].slug}`}>
+                    <h2 className="text-white text-4xl font-medium line-clamp-2">
+                      {blogItems[3].title}
+                    </h2>
+                  </Link>
+                  <p className="py-2 text-white opacity-50 italic">
+                    {blogItems[3].user_id}
+                  </p>
                   <p className="text-white opacity-50 mt-2 text-lg line-clamp-3 text-justify">
                     {blogItems[3].desc}
                   </p>
