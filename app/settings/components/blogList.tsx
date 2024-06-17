@@ -4,9 +4,7 @@ import React from "react";
 import BlogDelete from "./blogDelete";
 
 const BlogList: React.FC<any> = async ({ userId }) => {
-  const records = await pb.collection("Blogs").getFullList({
-    sort: "-user_id",
-  });
+  const records = await pb.collection("Blogs").getFullList();
   const blogData = records.filter((item) => item.user_id === userId);
   const userBlog = blogData.filter((item) => item.user_id === userId);
   return (

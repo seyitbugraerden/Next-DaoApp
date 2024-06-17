@@ -1,12 +1,12 @@
+"use server";
 import React from "react";
 import Container from "@/components/Container";
-import InputComp from "@/components/Input";
 import { cookies } from "next/headers";
 import jwt, { JwtPayload } from "jsonwebtoken";
-import { pb } from "@/lib/pb";
 import ProfileInt from "./components/profileInt";
 import BlogInt from "./components/blogInt";
 import BlogList from "./components/blogList";
+import Loader from "./components/loader";
 
 async function Settings() {
   const token: any = cookies().get("DaoAuth")?.value;
@@ -15,6 +15,7 @@ async function Settings() {
 
   return (
     <div className="bg-bgColor text-white h-screen flex justify-center items-center">
+      <Loader />
       <Container>
         <div className="grid xl:grid-cols-2 gap-14  mx-auto">
           <ProfileInt userId={userId} />
