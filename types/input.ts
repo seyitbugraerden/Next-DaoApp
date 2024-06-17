@@ -2,5 +2,6 @@ export interface InputProps {
   type: string;
   label: string;
   subtitle: string;
-  onChange?: (e: any) => void
+  value?: string;
+  onChange?: (e: any) => void;
 }
