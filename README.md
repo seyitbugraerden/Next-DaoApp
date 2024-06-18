@@ -5,9 +5,7 @@
 
 <h3>Custom Page Loader</h3>
 
-![Loader](https://github.com/seyitbugraerden/Next-DaoApp/assets/154025499/815e46b7-b701-495d-bac9-9e15948faf84)
-
-
+![2024-06-18 03-28-50](https://github.com/seyitbugraerden/Next-DaoApp/assets/154025499/11d11286-0c1d-4f24-a530-d8ad3f10a258)
 
 <h5>Custom Pages ( Editable by ADMIN )</h5>
 <ul>
