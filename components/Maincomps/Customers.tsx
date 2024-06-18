@@ -1,7 +1,7 @@
 import React from "react";
 import img1 from "@/public/images/person14.webp";
 import img2 from "@/public/images/person13.webp";
-import img3 from "@/public/images/img_sop.jpg";
+import img3 from "@/public/images/person16.webp";
 import Image from "next/image";
 import Container from "../Container";
 function Customers() {
@@ -76,10 +76,9 @@ function Customers() {
                   </svg>
                 </div>
                 <p className="py-7 text-2xl opacity-50 font-thin border-b-4">
-                  Absolutely love the content on this blog! The articles are
-                  well-written and cover a wide range of interesting topics.
-                  It's become my go-to site for insightful reads and
-                  inspiration.
+                  Lorem ipsum dolor sit amet, consectetur tempor incididunt ut
+                  labore et dolore magna aliqua ullamco laboris nisi ut aliquip
+                  ex ea commodo consequat.
                 </p>
                 <div className="flex flex-row gap-5 items-center mt-4">
                   <Image
@@ -91,9 +90,11 @@ function Customers() {
                     loading="lazy"
                   />
                   <div>
-                    <span className="font-bold text-2xl">Jason Johnson</span>
+                    <span className="font-bold text-2xl">Jane Doemunsky</span>
                     <br />
-                    <small className="opacity-50 text-sm">Customer</small>
+                    <small className="opacity-50 text-sm">
+                      COO, The Boo Corp.
+                    </small>
                   </div>
                 </div>
               </div>
@@ -155,9 +156,10 @@ function Customers() {
                   </svg>
                 </div>
                 <p className="py-7 text-2xl opacity-50 font-thin border-b-4">
-                  I appreciate the in-depth analysis and fresh perspectives
-                  presented here. The blog consistently offers valuable
-                  information that keeps me coming back for more. Great job!
+                  Lorem ipsum dolor sit amet, consectetur tempor incididunt ut
+                  labore et dolore magna aliqua. Ut enim ad minim veniam. quis
+                  nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                  commodo consequat.
                 </p>
                 <div className="flex flex-row gap-5 items-center mt-4">
                   <Image
@@ -169,9 +171,11 @@ function Customers() {
                     loading="lazy"
                   />
                   <div>
-                    <span className="font-bold text-2xl">Michael Thompson</span>
+                    <span className="font-bold text-2xl">Jane Doemunsky</span>
                     <br />
-                    <small className="opacity-50 text-sm">Customer</small>
+                    <small className="opacity-50 text-sm">
+                      COO, The Boo Corp.
+                    </small>
                   </div>
                 </div>
               </div>
@@ -249,13 +253,14 @@ function Customers() {
                   </svg>
                 </div>
                 <p className="py-7 text-2xl font-thin border-b-4">
-                  This blog is fantastic! The posts are engaging and very
-                  informative. It's clear that a lot of effort goes into
-                  creating quality content. Keep up the excellent work!
+                  Lorem ipsum dolor sit amet, consectetur tempor incididunt ut
+                  labore et dolore magna aliqua. Ut enim ad minim veniam. quis
+                  nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                  commodo consequat.
                 </p>
                 <div className="flex flex-row gap-5 items-center mt-4">
                   <Image
-                    src={img3}
+                    src={img2}
                     width="96"
                     height="96"
                     className="rounded-full"
@@ -263,9 +268,11 @@ function Customers() {
                     loading="lazy"
                   />
                   <div>
-                    <span className="font-bold text-2xl">Sophia Martinez</span>
+                    <span className="font-bold text-2xl">Jane Doemunsky</span>
                     <br />
-                    <small className="opacity-50 text-sm">Customer</small>
+                    <small className="opacity-50 text-sm">
+                      COO, The Boo Corp.
+                    </small>
                   </div>
                 </div>
               </div>
