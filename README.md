@@ -31,3 +31,7 @@
 
 ![blog](https://github.com/seyitbugraerden/Next-DaoApp/assets/154025499/a60a4fad-b3a4-4c98-b95c-3993ab9ce687)
 
+<h5>Pockethost ready to use Admin Dashboard System</h5>
+
+![FireShot Capture 008 - Nothing_Here - nao_-blogapp - PocketBase - nao-blogapp pockethost io](https://github.com/seyitbugraerden/Next-DaoApp/assets/154025499/dd2124af-9bcc-4bcd-b87d-0143a209e7b0)
+
